@@ -11,7 +11,7 @@ function PlantPage() {
     // no need to use http://localhost:3000 here
     fetch("/plants")
       .then((r) => r.json())
-      .then((plantsArray) => {
+      .then((plantsArray) => { 
         setPlants(plantsArray);
       });
   }, []);
